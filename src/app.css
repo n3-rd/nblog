@@ -13,7 +13,7 @@ body{
     font-family: 'Gambetta', serif;
     overflow-x: hidden;
 }
-.dark{
+html .dark{
     background-color: #1a1a1a;
     color: #fff;
 }
