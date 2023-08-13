@@ -1,7 +1,7 @@
 <div
-    class="w-screen fixed h-14 flex justify-between items-center px-7 bg-red-500"
+    class="w-full fixed h-14 flex justify-between items-center px-7 bg-white rounded-b-xl z-50"
 >
-    <div class="title">Blog</div>
+    <div class="title display">N3rd's Blog.</div>
     <div class="links flex justify-between gap-5">
         <div class="li"><a href="dev.to">Link 1</a></div>
         <div class="li"><a href="dev.to">Link 2</a></div>
