@@ -8,7 +8,9 @@
         {#each articles as article (article.id)}
             <a href="/articles/{article.id}" data-sveltekit-preload-data>
                 <div
-                    class="article w-full cursor-pointer hover:text-gray-800 transition-colors"
+                    class="article w-full cursor-pointer hover:text-gray-800 transition-colors
+                    dark:hover:text-gray-200
+                    "
                 >
                     <div class="article-image w-full h-[16rem]">
                         {#if article.cover_image}

@@ -13,6 +13,10 @@ body{
     font-family: 'Gambetta', serif;
     overflow-x: hidden;
 }
+.dark{
+    background-color: #1a1a1a;
+    color: #fff;
+}
     /* Styles for links */
     .content a {
         color: #007bff; /* Change link color */
