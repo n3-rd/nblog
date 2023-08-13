@@ -13,3 +13,25 @@ body{
     font-family: 'Gambetta', serif;
     overflow-x: hidden;
 }
+    /* Styles for links */
+    .content a {
+        color: #007bff; /* Change link color */
+        text-decoration: underline; /* Add underline to links */
+    }
+
+    /* Styles for headers */
+    .content h1,
+    .content h2,
+    .content h3,
+    .content h4,
+    .content h5,
+    .content h6 {
+        margin: 10px 0; /* Add margin below headers */
+    }
+
+    /* Styles for code */
+    .content code {
+        background-color: #f5f5f5; /* Add background color for code */
+        padding: 2px 4px; /* Add padding for code */
+        border-radius: 4px; /* Add rounded corners */
+    }
