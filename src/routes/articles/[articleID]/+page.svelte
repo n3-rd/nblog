@@ -7,6 +7,9 @@
     const { article } = data;
 </script>
 
+<svelte:head>
+    <title>{article.title}</title>
+</svelte:head>
 <ArticleImage coverImage={article.cover_image} title={article.title} />
 <ArticleInfo
     title={article.title}

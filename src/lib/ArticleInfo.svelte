@@ -7,7 +7,9 @@
 
 <h1 class="text-center text-5xl px-24 py-3 font-black">{title}</h1>
 <div class="article-authout py-4 text-center">
-    by {username}
+    by <a href="http://dev.to/{username}" target="_blank" rel="noreferrer"
+        >{username}</a
+    >
 </div>
 <div class="article-info flex justify-center items-center gap-4">
     <div class="publish-date">

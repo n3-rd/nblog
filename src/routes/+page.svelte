@@ -3,6 +3,9 @@
     const { articles } = data;
 </script>
 
+<svelte:head>
+    <title>N3rd's Blog</title>
+</svelte:head>
 <div class="px-4">
     <div class="grid grid-cols-3 gap-x-4 gap-y-5">
         {#each articles as article (article.id)}
