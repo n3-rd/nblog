@@ -4,7 +4,7 @@
 </script>
 
 <div class="article-image-container w-full flex justify-center pt-5">
-    <div class="article-image w-[60%] h-[24rem]">
+    <div class="article-image w-[87%] md:w-[60%] h-[24rem]">
         <img
             src={coverImage}
             alt={title}

@@ -1,5 +1,6 @@
 <script>
     export let data;
+    import { base } from "$app/paths";
     const { articles } = data;
 </script>
 
@@ -7,9 +8,9 @@
     <title>N3rd's Blog</title>
 </svelte:head>
 <div class="px-4">
-    <div class="grid grid-cols-3 gap-x-4 gap-y-5">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-5">
         {#each articles as article (article.id)}
-            <a href="/articles/{article.id}" data-sveltekit-preload-data>
+            <a href="{base}/articles/{article.id}" data-sveltekit-preload-data>
                 <div
                     class="article w-full cursor-pointer hover:text-gray-800 transition-colors
                     dark:hover:text-gray-200

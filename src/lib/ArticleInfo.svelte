@@ -5,7 +5,9 @@
     export let ttr;
 </script>
 
-<h1 class="text-center text-5xl px-24 py-3 font-black">{title}</h1>
+<h1 class="text-center text-3xl md:text-5xl px-4 md:px-24 py-3 font-black">
+    {title}
+</h1>
 <div class="article-authout py-4 text-center">
     by <a href="http://dev.to/{username}" target="_blank" rel="noreferrer"
         >{username}</a

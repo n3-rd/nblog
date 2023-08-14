@@ -4,7 +4,7 @@
   import { theme } from "$lib/store.js";
 </script>
 
-<div class="{$theme} transition-colors">
+<div class="{$theme} transition-colors min-h-screen">
   <Header />
   <div class="pt-16">
     <slot />
