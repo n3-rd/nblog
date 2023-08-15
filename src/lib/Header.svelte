@@ -7,7 +7,16 @@
     class="w-full fixed h-14 flex justify-between items-center px-7 text-black dark:text-white bg-gray-50 dark:bg-gray-900 rounded-b-xl z-50"
 >
     <a href="{base}/"><div class="title display">N3rd's Blog.</div></a>
-    <div class="links flex justify-between gap-5">
+    <div class="links flex gap-4">
+        <a href="https://github.com/n3-rd" target="_blank" rel="noreferrer"
+            ><div class="li">/github</div></a
+        >
+        <a href="mailto:godwinjdayo@gmail.com?subject=%5BFrom%20Blog%5D"
+            ><div class="li">/email</div></a
+        >
+    </div>
+
+    <div class="theme-toggler flex justify-between gap-5">
         {#if $theme == "light"}
             <button class="theme-selector" on:click={() => theme.set("dark")}>
                 <div class="li">/dark-mode</div>
