@@ -19,6 +19,6 @@
     });
 </script>
 
-<div class="content px-4 md:px-16 py-3">
+<div class="content px-4 md:px-8 py-3 text-xl max-w-3xl mx-auto prose">
     {@html DOMPurify.sanitize(articleContent)}
 </div>

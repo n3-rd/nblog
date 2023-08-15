@@ -28,7 +28,7 @@
             </p>
         </div>
     </div>
-    <div class="comment-body">
+    <div class="comment-body prose">
         <p class="text-xl">{@html DOMPurify.sanitize(body)}</p>
     </div>
 </div>
