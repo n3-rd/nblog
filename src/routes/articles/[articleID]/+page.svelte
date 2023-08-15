@@ -2,9 +2,10 @@
     import ArticleContent from "$lib/ArticleContent.svelte";
     import ArticleImage from "$lib/ArticleImage.svelte";
     import ArticleInfo from "$lib/ArticleInfo.svelte";
+    import CommentSection from "$lib/CommentSection.svelte";
 
     export let data;
-    const { article } = data;
+    const { article, comments } = data;
 </script>
 
 <svelte:head>
@@ -38,3 +39,4 @@
     ttr={article.reading_time_minutes}
 />
 <ArticleContent content={article.body_html} />
+<CommentSection {comments} {article} />
