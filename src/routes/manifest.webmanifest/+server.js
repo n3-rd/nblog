@@ -15,8 +15,11 @@ export const GET = function get({ setHeaders }) {
         theme_color: themeColor,
         display: 'standalone',
         icons: [
-            { src: '/icon-192.png', type: 'image/png', sizes: '192x192' },
-            { src: '/icon-512.png', type: 'image/png', sizes: '512x512' },
+            { "src": "/icons/favicon.ico", "type": "image/x-icon", "sizes": "16x16 32x32" },
+            { "src": "/icons/icon-192.png", "type": "image/png", "sizes": "192x192" },
+            { "src": "/icons/icon-512.png", "type": "image/png", "sizes": "512x512" },
+            { "src": "/icons/icon-192-maskable.png", "type": "image/png", "sizes": "192x192", "purpose": "maskable" },
+            { "src": "/icons/icon-512-maskable.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
         ],
     };
 
