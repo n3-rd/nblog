@@ -1,4 +1,6 @@
 <script>
+    import DOMPurify from "isomorphic-dompurify";
+
     export let thumbnail;
     export let username;
     export let date;
@@ -27,6 +29,6 @@
         </div>
     </div>
     <div class="comment-body">
-        <p class="text-xl">{@html body}</p>
+        <p class="text-xl">{@html DOMPurify.sanitize(body)}</p>
     </div>
 </div>
