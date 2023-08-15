@@ -11,7 +11,7 @@
     </div>
 {:else}
     <!-- comments section-->
-    <div class="comments-section py-14 px-16">
+    <div class="comments-section py-14 px-6 md:px-16">
         <h3 class="text-6xl py-4">Comments</h3>
         <div class="info">
             Go to <a
