@@ -3,8 +3,13 @@
     export let username;
     export let published;
     export let ttr;
+    export let slug;
 </script>
-<h1 class="text-center text-3xl md:text-5xl px-4 md:px-24 py-3 font-black">
+
+<h1
+    class="text-center text-3xl md:text-5xl px-4 md:px-24 py-3 font-black article-header"
+    style:--article-header="article-{slug}"
+>
     {title}
 </h1>
 <div class="article-authout py-4 text-center">
@@ -18,3 +23,9 @@
     </div>
     <div class="ttr">{ttr} mins read</div>
 </div>
+
+<style type="text/css">
+    .article-header {
+        view-transition-name: var(--article-header);
+    }
+</style>

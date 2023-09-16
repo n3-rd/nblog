@@ -41,6 +41,7 @@
     username={article.user.username}
     published={article.published_timestamp}
     ttr={article.reading_time_minutes}
+    slug={article.slug}
 />
 <ArticleContent content={article.body_html} />
 <CommentSection {comments} {article} />

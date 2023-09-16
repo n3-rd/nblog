@@ -35,7 +35,10 @@
                             {/if}
                         </div>
                         <div class="article-title py-2">
-                            <h1>
+                            <h1
+                                class="article-header"
+                                style:--article-header="article-{article.slug}"
+                            >
                                 {article.title}
                             </h1>
                         </div>
@@ -49,5 +52,8 @@
 <style type="text/css">
     img {
         view-transition-name: var(--tag);
+    }
+    .article-header {
+        view-transition-name: var(--article-header);
     }
 </style>
