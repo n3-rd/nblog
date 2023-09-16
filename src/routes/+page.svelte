@@ -26,6 +26,7 @@
                                     class="w-full h-full object-cover object-center rounded-xl hover:opacity-80 transition-opacity"
                                     src={article.cover_image}
                                     alt="article"
+                                    style:--tag="article-{article.id}"
                                 />
                             {:else}
                                 <div
@@ -34,9 +35,9 @@
                             {/if}
                         </div>
                         <div class="article-title py-2">
-                            <h2>
+                            <h1>
                                 {article.title}
-                            </h2>
+                            </h1>
                         </div>
                     </div>
                 </a>
@@ -44,3 +45,9 @@
         </div>
     </div>
 {/key}
+
+<style type="text/css">
+    img {
+        view-transition-name: var(--tag);
+    }
+</style>

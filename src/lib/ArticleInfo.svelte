@@ -4,7 +4,6 @@
     export let published;
     export let ttr;
 </script>
-
 <h1 class="text-center text-3xl md:text-5xl px-4 md:px-24 py-3 font-black">
     {title}
 </h1>

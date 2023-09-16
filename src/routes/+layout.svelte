@@ -5,7 +5,19 @@
   import { dev } from "$app/environment";
   import { inject } from "@vercel/analytics";
   import Analytics from "$lib/Analytics.svelte";
-  import { fly } from "svelte/transition";
+
+  import { onNavigate } from "$app/navigation";
+
+  onNavigate((navigation) => {
+    if (!document.startViewTransition) return;
+
+    return new Promise((resolve) => {
+      document.startViewTransition(async () => {
+        resolve();
+        await navigation.complete;
+      });
+    });
+  });
 
   export let data;
 
@@ -17,10 +29,7 @@
   <Header />
   {#key data.currentPath}
     <div class="pt-16">
-      <div
-        in:fly={{ y: -30, duration: 200, delay: 150 }}
-        out:fly={{ y: -30, duration: 150 }}
-      >
+      <div>
         <slot />
       </div>
     </div>

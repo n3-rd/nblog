@@ -31,7 +31,11 @@
         content={article.published_timestamp}
     />
 </svelte:head>
-<ArticleImage coverImage={article.cover_image} title={article.title} />
+<ArticleImage
+    coverImage={article.cover_image}
+    title={article.title}
+    id={article.id}
+/>
 <ArticleInfo
     title={article.title}
     username={article.user.username}
