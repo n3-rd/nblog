@@ -4,15 +4,20 @@
     export let article;
 </script>
 
-{#if comments.length === 0}
-    <div class="comments-section py-14 px-16">
-        <h3 class="text-6xl py-4">Comments</h3>
+<div class="comments-section py-14 px-16">
+    <h3 class="text-6xl py-4">Comments</h3>
+
+    {#if comments.length === 0}
         <div class="info">No comments yet</div>
-    </div>
-{:else}
-    <!-- comments section-->
-    <div class="comments-section py-14 px-6 md:px-16">
-        <h3 class="text-6xl py-4">Comments</h3>
+        <div class="info my-5">
+            Go to <a
+                href={article.url}
+                class="text-blue-500 underline"
+                target="_blank"
+                rel="noopener noreferrer">The post URL</a
+            > to comment
+        </div>
+    {:else}
         <div class="info">
             Go to <a
                 href={article.url}
@@ -41,5 +46,5 @@
                 {/each}
             {/each}
         </div>
-    </div>
-{/if}
+    {/if}
+</div>
